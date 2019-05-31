@@ -1,0 +1,38 @@
+{
+  "name": "Test-Flip",
+  "version": "1.0.0",
+  "description": "Automation-Test-Suite",
+  "main": "nightwatch.conf.js",
+  "scripts": {
+    "e2e-test-debug": "node --inspect node_modules/nightwatch/bin/nightwatch --retries 3 ",
+    "e2e-test": "node  node_modules/nightwatch/bin/nightwatch --retries 5",
+    "e2e-test:chrome": "npm run e2e-test -- --env chrome   --skiptags skip",
+    "e2e-test:chromeheadless": " npm run e2e-test -- --env chromeheadless --skiptags skip",
+
+    "poste2e-test": "node create-html-report.js",
+    "test-db": "npm run hookbase"
+  },
+  "author": "Automators",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "",
+    "chromedriver": "",
+    "cross-env": "",
+    "cucumber": "^3.0.3",
+    "cucumber-html-reporter": "3.0.4",
+    "geckodriver": "^1.8.1",
+    "multiple-cucumber-html-reporter": "^1.10.2",
+    "nightwatch": "^0.9.16",
+    "nightwatch-cucumber": "^8.2.2",
+    "selenium-download": "",
+    "selenium-server": "",
+    "xmlhttprequest": ""
+  },
+  "keywords": [
+    "nightwatch",
+    "testing",
+    "front-end",
+    "UI",
+    "browser"
+  ]
+}

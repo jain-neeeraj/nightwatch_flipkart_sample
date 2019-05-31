@@ -1,0 +1,22 @@
+{
+    "homePage":{
+        "inputUserName": "//span[contains(text(),'Enter Email/Mobile number')]/parent::label/preceding-sibling::input",
+        "inputPassword": "//input[@type='password']",
+        "btnSignUp": "//span[contains(text(),'New to Flipkart? Sign up')]",
+        "btnLogin": "//button//span[contains(text(),'Login')]"
+    },
+    "navBar":{
+        "spanMensSection":"//span[contains(text(),'Men')]",
+        "linkMensSection":"//span[contains(text(),'Men')]/following-sibling::ul//a[@title='Sports Shoes']"
+    },
+    "productListingPage": {
+        "linkPageNumer": "//span[contains(text(),'Page 1 of')]/following-sibling::nav/a[contains(text(),'::index::')]",
+        "linkProductName": "//a[contains(text(),'::productName::')]"
+    },
+    "productDetails":{
+        "btnAddToCart": "._2AkmmA._2Npkh4._2MWPVK"
+    },
+    "userCartPage":{
+        "btnPlaceOrder":"//span[contains(text(),'Place Order')]"
+    }
+}
